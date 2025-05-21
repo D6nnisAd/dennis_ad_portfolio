@@ -1,3 +1,5 @@
+--- START OF FILE index.html ---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,63 +47,63 @@
             --modal-content-bg: var(--card-bg);
             --modal-close-color: var(--text-muted);
             --modal-close-hover-color: var(--heading-color);
-            --hero-shape-color: rgba(5, 191, 173, 0.08); /* Color for background shapes */
-            --pen-tool-body: var(--heading-color); /* Color for pen tool body */
-            --pen-tool-nib: var(--primary-color); /* Color for pen tool nib */
-            --pen-tool-detail: var(--text-muted); /* Color for subtle details */
+            --hero-shape-color: rgba(5, 191, 173, 0.08);
+            --primary-color-glow: rgba(5, 191, 173, 0.7);
+            --hero-particle-color: rgba(5, 191, 173, 0.4); /* New for background particles */
+
 
             /* Shared */
             --heading-font: 'Poppins', sans-serif;
             --body-font: 'Roboto', sans-serif;
             --transition-speed: 0.3s;
-            --section-padding: 6rem 1.5rem; /* Adjusted default padding */
+            --section-padding: 6rem 1.5rem;
         }
 
         /* --- Light Mode Variables --- */
         body.light-mode {
             --primary-color: #008a7e;
             --primary-darker: #006d64;
-            --text-color: #374151; /* gray-700 */
-            --text-muted: #6b7280; /* gray-500 */
-            --heading-color: #111827; /* gray-900 */
-            --body-bg: #f9fafb; /* gray-50 (Slightly off-white) */
-            --card-bg: #ffffff; /* white */
-            --card-border: #e5e7eb; /* gray-200 */
+            --text-color: #374151;
+            --text-muted: #6b7280;
+            --heading-color: #111827;
+            --body-bg: #f9fafb;
+            --card-bg: #ffffff;
+            --card-border: #e5e7eb;
             --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
-            --header-bg: rgba(255, 255, 255, 0.9); /* white transparent */
-            --header-bg-scrolled: rgba(255, 255, 255, 0.98); /* white less transparent */
-            --header-border-scrolled: #e5e7eb; /* gray-200 */
-            --input-bg: #ffffff; /* white */
-            --input-border: #d1d5db; /* gray-300 */
+            --header-bg: rgba(255, 255, 255, 0.9);
+            --header-bg-scrolled: rgba(255, 255, 255, 0.98);
+            --header-border-scrolled: #e5e7eb;
+            --input-bg: #ffffff;
+            --input-border: #d1d5db;
             --input-focus-border: var(--primary-color);
             --input-focus-shadow: rgba(0, 138, 126, 0.2);
-            --footer-bg: #e5e7eb; /* gray-200 */
-            --footer-text: #4b5563; /* gray-600 */
-            --section-alt-bg: #ffffff; /* white (for About, Contact Form) */
-            --toggle-icon-color: #374151; /* gray-700 */
+            --footer-bg: #e5e7eb;
+            --footer-text: #4b5563;
+            --section-alt-bg: #ffffff;
+            --toggle-icon-color: #374151;
             --skill-tag-bg: var(--primary-color);
             --skill-tag-border: var(--primary-color);
-            --skill-tag-text: #ffffff; /* White text */
-            --btn-primary-text: #ffffff; /* White text on primary btn */
-            --modal-overlay-bg: rgba(243, 244, 246, 0.85); /* Light overlay */
+            --skill-tag-text: #ffffff;
+            --btn-primary-text: #ffffff;
+            --modal-overlay-bg: rgba(243, 244, 246, 0.85);
             --modal-content-bg: var(--body-bg);
-             --modal-close-color: var(--text-muted);
+            --modal-close-color: var(--text-muted);
             --modal-close-hover-color: var(--heading-color);
-            --hero-shape-color: rgba(0, 138, 126, 0.06); /* Light mode shape color */
-            --pen-tool-body: var(--heading-color);
-            --pen-tool-nib: var(--primary-color);
-            --pen-tool-detail: var(--text-muted);
+            --hero-shape-color: rgba(0, 138, 126, 0.06);
+            --primary-color-glow-light: rgba(0, 138, 126, 0.5);
+            --primary-color-glow: var(--primary-color-glow-light);
+            --hero-particle-color: rgba(0, 138, 126, 0.3); /* New for background particles */
         }
 
         /* --- Global Styles --- */
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        html { font-size: 16px; scroll-behavior: smooth; scroll-padding-top: 70px; /* Match header height */ }
+        html { font-size: 16px; scroll-behavior: smooth; scroll-padding-top: 70px; }
         body {
-            font-family: var(--body-font); line-height: 1.7; /* Slightly adjusted */ color: var(--text-color);
+            font-family: var(--body-font); line-height: 1.7; color: var(--text-color);
             background-color: var(--body-bg);
             transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
             -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
-            overflow-x: hidden; /* Prevent horizontal scroll */
+            overflow-x: hidden;
         }
         body.modal-open { overflow: hidden; }
         h1, h2, h3, h4, h5, h6 {
@@ -109,9 +111,9 @@
             margin-bottom: 1.2rem; color: var(--heading-color);
             transition: color var(--transition-speed) ease; letter-spacing: -0.02em;
         }
-        h1 { font-size: 2.8rem; font-weight: 700; } /* Adjusted */
-        h2 { font-size: 2.2rem; } /* Adjusted */
-        h3 { font-size: 1.5rem; } /* Adjusted */
+        h1 { font-size: 2.8rem; font-weight: 700; }
+        h2 { font-size: 2.2rem; }
+        h3 { font-size: 1.5rem; }
         p { margin-bottom: 1rem; color: var(--text-color); transition: color var(--transition-speed) ease; }
         p.muted { color: var(--text-muted); font-size: 0.95rem; }
         a { color: var(--primary-color); text-decoration: none; transition: color var(--transition-speed) ease; }
@@ -122,26 +124,26 @@
         /* --- Layout & Sections --- */
         .section { padding: var(--section-padding); transition: background-color var(--transition-speed) ease; border-bottom: 1px solid var(--card-border); }
         section:last-of-type { border-bottom: none; }
-        #about, .contact-content-wrapper { background-color: var(--section-alt-bg); } /* Target wrapper for contact */
+        #about, .contact-content-wrapper { background-color: var(--section-alt-bg); }
         .hero, #portfolio, #contact { background-color: var(--body-bg); }
-        .hero { border-bottom: none; padding-top: 70px; /* Ensure space below fixed header */ }
-        #contact { padding-bottom: 0; } /* Remove bottom padding if footer follows immediately */
+        .hero { border-bottom: none; padding-top: 70px; }
+        #contact { padding-bottom: 0; }
         .section-title {
-            text-align: center; margin-bottom: 3.5rem; /* Adjusted */ font-weight: 700;
+            text-align: center; margin-bottom: 3.5rem; font-weight: 700;
             position: relative; padding-bottom: 1rem;
         }
         .section-title::after {
             content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
-            width: 60px; /* Adjusted */ height: 4px; background-color: var(--primary-color);
+            width: 60px; height: 4px; background-color: var(--primary-color);
             border-radius: 2px; transition: background-color var(--transition-speed) ease;
         }
 
         /* --- Buttons --- */
         .btn {
             display: inline-block; background-color: var(--primary-color); color: var(--btn-primary-text);
-            padding: 0.8rem 1.8rem; /* Adjusted */ border-radius: 16px;
+            padding: 0.8rem 1.8rem; border-radius: 16px;
             font-family: var(--heading-font); font-weight: 600; text-transform: uppercase;
-            letter-spacing: 0.05em; border: 2px solid transparent; /* Changed border */
+            letter-spacing: 0.05em; border: 2px solid transparent;
             transition: all var(--transition-speed) ease; cursor: pointer;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
@@ -164,22 +166,22 @@
             background-color: var(--header-bg); position: fixed; top: 0; left: 0; width: 100%;
             z-index: 1000; border-bottom: 1px solid transparent; backdrop-filter: blur(8px);
             -webkit-backdrop-filter: blur(8px);
-            transition: background-color var(--transition-speed) ease, border-color var(--transition-speed) ease, box-shadow var(--transition-speed) ease; /* Added shadow transition */
+            transition: background-color var(--transition-speed) ease, border-color var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
         }
         .header.scrolled { background-color: var(--header-bg-scrolled); border-bottom-color: var(--header-border-scrolled); box-shadow: 0 2px 10px rgba(0,0,0, 0.1); body.dark-mode & { box-shadow: 0 2px 10px rgba(0,0,0, 0.2); } }
         .navbar { display: flex; justify-content: space-between; align-items: center; height: 70px; padding: 0 1.5rem; max-width: 1200px; margin: 0 auto; }
 
         .logo {
-            font-family: var(--heading-font); font-size: 1.7rem; /* Adjusted */ font-weight: 700;
-            color: var(--heading-color); display: flex; align-items: center; gap: 0.6rem; /* Adjusted */
+            font-family: var(--heading-font); font-size: 1.7rem; font-weight: 700;
+            color: var(--heading-color); display: flex; align-items: center; gap: 0.6rem;
         }
         .logo-image { height: 36px; width: 36px; border-radius: 50%; object-fit: cover; border: 1px solid var(--card-border); }
 
         .nav-links { list-style: none; display: flex; align-items: center; }
-        .nav-links li { margin-left: 2rem; /* Adjusted */ }
+        .nav-links li { margin-left: 2rem; }
         .nav-links a {
-            color: var(--text-muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; /* Adjusted */
-            font-size: 0.85rem; /* Adjusted */ padding-bottom: 0.5rem; position: relative; transition: color var(--transition-speed) ease;
+            color: var(--text-muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em;
+            font-size: 0.85rem; padding-bottom: 0.5rem; position: relative; transition: color var(--transition-speed) ease;
         }
         .nav-links a::after {
             content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px;
@@ -188,11 +190,11 @@
         }
         .nav-links a:hover, .nav-links a.active { color: var(--heading-color); }
         .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
-        .menu-toggle { display: none; font-size: 1.5rem; /* Adjusted */ color: var(--text-color); cursor: pointer; background: none; border: none; margin-left: 1rem; padding: 0.5rem; transition: color var(--transition-speed) ease; z-index: 1001; }
+        .menu-toggle { display: none; font-size: 1.5rem; color: var(--text-color); cursor: pointer; background: none; border: none; margin-left: 1rem; padding: 0.5rem; transition: color var(--transition-speed) ease; z-index: 1001; }
         .menu-toggle:hover { color: var(--primary-color); }
         .dark-mode-toggle {
-            background: none; border: none; color: var(--toggle-icon-color); font-size: 1.3rem; /* Adjusted */ cursor: pointer;
-            margin-left: 2rem; /* Adjusted */ padding: 0.5rem; line-height: 1; transition: color var(--transition-speed) ease, transform 0.2s ease;
+            background: none; border: none; color: var(--toggle-icon-color); font-size: 1.3rem; cursor: pointer;
+            margin-left: 2rem; padding: 0.5rem; line-height: 1; transition: color var(--transition-speed) ease, transform 0.2s ease;
         }
         .dark-mode-toggle:hover { color: var(--primary-color); transform: scale(1.1); }
 
@@ -203,47 +205,45 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            position: relative; /* For pseudo-elements and pen animation */
-            overflow: hidden; /* Contain shapes and animation */
-            padding-left: 1rem; /* Ensure padding on mobile */
-            padding-right: 1rem; /* Ensure padding on mobile */
-            padding-top: 100px; /* Add padding top to push content down slightly */
+            position: relative;
+            overflow: hidden;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 100px;
         }
         .hero-content {
-            max-width: 800px; /* Adjusted */
-            position: relative; /* Ensure content is above pseudo-elements and pen */
-            z-index: 1;
-             margin-top: 3rem; /* Add margin to push content down below animation */
+            max-width: 800px;
+            position: relative;
+            z-index: 1; /* Ensures hero text is above morphing icon and particles */
+            margin-top: 3rem;
         }
         .hero h1 {
-            font-size: 3.2rem; /* Adjusted */
+            font-size: 3.2rem;
             margin-bottom: 1.5rem;
             font-weight: 700;
             color: var(--heading-color);
             line-height: 1.2;
-            /* Animation Delay */
-            opacity: 0; /* Start hidden for animation */
+            opacity: 0;
             animation: fadeInSlideUp 0.8s 0.3s ease-out forwards;
         }
         .hero h1 span { color: var(--primary-color); transition: color var(--transition-speed) ease; }
         .hero p {
-            font-size: 1.15rem; /* Adjusted */
+            font-size: 1.15rem;
             margin-bottom: 2.5rem;
             color: var(--text-muted);
             font-weight: 300;
-            max-width: 600px; /* Adjusted */
+            max-width: 600px;
             margin-left: auto;
             margin-right: auto;
-             /* Animation Delay */
-            opacity: 0; /* Start hidden for animation */
+            opacity: 0;
             animation: fadeInSlideUp 0.8s 0.5s ease-out forwards;
         }
         .hero .btn-container {
-            opacity: 0; /* Start hidden for animation */
+            opacity: 0;
             animation: fadeInSlideUp 0.8s 0.7s ease-out forwards;
         }
 
-        /* Hero Background Shapes Animation */
+        /* Hero Background Shapes Animation (Existing - Large Blobs) */
         .hero::before,
         .hero::after {
             content: '';
@@ -251,23 +251,17 @@
             border-radius: 50%;
             background-color: var(--hero-shape-color);
             transition: background-color var(--transition-speed) ease;
-            z-index: 0; /* Behind content */
-            filter: blur(30px); /* Soften the shapes */
-            pointer-events: none; /* Prevent interaction */
+            z-index: 0; /* Behind other hero content and particles */
+            filter: blur(30px);
+            pointer-events: none;
         }
         .hero::before {
-            width: 300px;
-            height: 300px;
-            left: 10%;
-            top: 15%; /* Adjusted slightly */
+            width: 300px; height: 300px; left: 10%; top: 15%;
             animation: float 12s ease-in-out infinite alternate;
         }
         .hero::after {
-            width: 250px;
-            height: 250px;
-            right: 15%;
-            bottom: 20%; /* Adjusted slightly */
-            animation: float 15s 1s ease-in-out infinite alternate; /* Different duration and delay */
+            width: 250px; height: 250px; right: 15%; bottom: 20%;
+            animation: float 15s 1s ease-in-out infinite alternate;
         }
 
         @keyframes float {
@@ -275,11 +269,87 @@
             50% { transform: translateY(-25px) scale(1.05); opacity: 1; }
             100% { transform: translateY(0px) scale(1); opacity: 0.7; }
         }
-        /* Keyframes for content entrance */
         @keyframes fadeInSlideUp {
              from { opacity: 0; transform: translateY(25px); }
              to { opacity: 1; transform: translateY(0); }
          }
+
+        /* --- New Hero Particle Background Styles --- */
+        .hero-particles-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Crucial to contain particles */
+            pointer-events: none; /* Allow interactions with elements behind/in front */
+            z-index: 0; /* Below morphing icon (also z-index:0 but later in DOM) and hero-content (z-index:1), above ::before/::after if they had negative z-index */
+        }
+
+        .particle {
+            position: absolute;
+            background-color: var(--hero-particle-color);
+            border-radius: 50%;
+            opacity: 0; /* Initial state, will be animated by JS */
+            /* transform will be set by JS */
+            transition: background-color var(--transition-speed) ease; /* For theme changes */
+            will-change: transform, opacity; /* Performance hint */
+        }
+
+
+        /* --- Morphing Icon Animation Styles --- */
+        .icon-morph-animation-container {
+            position: absolute;
+            top: 18%;
+            left: 50%;
+            width: 200px;
+            height: 200px;
+            transform: translateX(-50%);
+            z-index: 0; /* Above particles, below hero-content text */
+            opacity: 0.85;
+            pointer-events: none;
+            transition: opacity var(--transition-speed) ease, transform 0.1s ease-out;
+        }
+
+        body.light-mode .icon-morph-animation-container { opacity: 0.7; }
+
+        .icon-morph-animation-container svg { width: 100%; height: 100%; overflow: visible; }
+
+        .morph-icon-group {
+            fill: var(--primary-color);
+            opacity: 0;
+            transform-origin: center center;
+            transform: scale(0.7) rotate(-20deg) translateY(10px);
+            transition: opacity 0.6s cubic-bezier(0.25, 0.1, 0.25, 1),
+                        transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+        .morph-icon-group path,
+        .morph-icon-group rect,
+        .morph-icon-group circle,
+        .morph-icon-group line,
+        .morph-icon-group polyline,
+        .morph-icon-group polygon {
+            filter: drop-shadow(0 0 8px var(--primary-color-glow));
+            transition: filter var(--transition-speed) ease;
+        }
+        .morph-icon-group.active {
+            opacity: 1;
+            transform: scale(1) rotate(0deg) translateY(0px);
+        }
+        @media (max-width: 767px) {
+            .icon-morph-animation-container { width: 150px; height: 150px; top: 15%; opacity: 0.8; }
+            body.light-mode .icon-morph-animation-container { opacity: 0.65; }
+        }
+        @media (max-width: 480px) {
+            .icon-morph-animation-container { width: 120px; height: 120px; top: 13%; opacity: 0.75; }
+            .morph-icon-group path,
+            .morph-icon-group rect,
+            .morph-icon-group circle,
+            .morph-icon-group line,
+            .morph-icon-group polyline,
+            .morph-icon-group polygon { filter: drop-shadow(0 0 5px var(--primary-color-glow)); }
+        }
+
 
         /* --- Portfolio Section --- */
         .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
@@ -487,8 +557,8 @@
              .menu-toggle { display: block; }
 
              /* Hero Adjustments for Mobile */
-             .hero { min-height: 90vh; padding-top: 80px; /* Adjust padding */ }
-             .hero-content { margin-top: 1rem; /* Reduce margin */ }
+             .hero { min-height: 90vh; padding-top: 80px; }
+             .hero-content { margin-top: 1rem; }
              .hero h1 { font-size: 2.5rem; }
              .hero p { font-size: 1rem; margin-bottom: 2rem; }
              .hero::before { width: 200px; height: 200px; left: -10%; top: 15%; animation-duration: 15s; }
@@ -508,116 +578,6 @@
              .form-group input, .form-group textarea { border-radius: 10px; padding: 0.7rem 0.9rem; }
              .footer { padding: 1.5rem 1rem; }
         }
-
-        /* --- Pen Tool Animation Styles --- */
-        .pen-animation-container {
-            position: absolute;
-            /* Position near the top, centered horizontally */
-            top: 18%; /* Adjust as needed, closer to h1 */
-            left: 50%;
-            transform: translateX(-50%);
-            width: 300px; /* Adjust size as needed, maybe smaller */
-            max-width: 60%; /* Prevent becoming too large */
-            height: auto; /* Maintain aspect ratio */
-            z-index: 0; /* Behind hero text content but above background shapes */
-            opacity: 0.65; /* Adjust subtlety */
-            pointer-events: none; /* Prevent interference */
-            transition: opacity var(--transition-speed) ease;
-        }
-
-        body.light-mode .pen-animation-container {
-            opacity: 0.5; /* Adjust for light mode */
-        }
-
-        .pen-animation-container svg {
-            width: 100%;
-            height: 100%;
-            overflow: visible; /* Allow pen tool to overhang path slightly */
-        }
-
-        /* Style the drawing path */
-        #drawing-path {
-            /* --- CRITICAL: Path Length --- */
-            /* Path: M 20 100 Q 100 10 200 80 T 380 110 -> Length ~469.7 */
-            /* If you change the 'd' attribute, recalculate: */
-            /* console.log(document.getElementById('drawing-path').getTotalLength()); */
-            stroke-dasharray: 470; /* <<< ADJUST THIS VALUE if path changes */
-            stroke-dashoffset: 470; /* <<< ADJUST THIS VALUE (same as dasharray) */
-            animation: draw-the-line 10s ease-in-out infinite;
-            transition: stroke var(--transition-speed) ease; /* Theme transition */
-        }
-
-        /* Style and animate the Pen Tool icon */
-        #pen-tool-icon {
-            /* Apply motion path using the *exact* same path data as #drawing-path */
-            offset-path: path('M 20 100 Q 100 10 200 80 T 380 110');
-            /* Animation to move along the path */
-            animation: move-the-pen-tool 10s ease-in-out infinite;
-
-            /* --- CRITICAL: Orientation & Anchor --- */
-            /* Which point on the Pen Tool SVG follows the path? The TIP. */
-            /* Adjust based on your SVG's coordinates for the tip. */
-            /* Example: If tip is at x=5, y=25 in a 30x30 viewbox, try ~17% 83% */
-            /* Let's try centering the bottom point of the nib */
-            offset-anchor: 50% 100%; /* <<< FINE TUNE THIS (X% Y%) */
-
-            /* Rotate the tool to align with the path tangent */
-            /* 'auto' uses the element's X-axis. Add degrees to adjust */
-            /* If pen drawn pointing down, might need -90deg. If up, 90deg */
-            offset-rotate: auto -90deg; /* <<< FINE TUNE THIS ANGLE */
-
-            /* Adjust overall size if needed */
-             transform: scale(1.1); /* Slightly larger pen tool */
-
-             /* Performance hint */
-             will-change: offset-distance, offset-rotate, opacity;
-        }
-
-        /* Style the parts of the Pen Tool using CSS variables */
-        #pen-tool-icon .pen-body { fill: var(--pen-tool-body); transition: fill var(--transition-speed) ease; }
-        #pen-tool-icon .pen-nib { fill: var(--pen-tool-nib); transition: fill var(--transition-speed) ease; }
-        #pen-tool-icon .pen-detail { fill: var(--pen-tool-detail); transition: fill var(--transition-speed) ease; }
-
-
-        /* Keyframes for drawing the line - Synced fade */
-        @keyframes draw-the-line {
-            0% { stroke-dashoffset: 470; opacity: 0; } /* Start invisible (Adjust length) */
-            5% { opacity: 1; }                        /* Fade in */
-            85% { stroke-dashoffset: 0; opacity: 1; } /* Line fully drawn, start fade out */
-            95% { opacity: 0; }                       /* Fully faded out */
-            100% { stroke-dashoffset: 0; opacity: 0; } /* Keep drawn but invisible for loop reset */
-        }
-
-        /* Keyframes for moving the Pen Tool - Synced fade */
-        @keyframes move-the-pen-tool {
-            0% { offset-distance: 0%; opacity: 0; }     /* Start at beginning, invisible */
-            5% { opacity: 1; }                         /* Fade in */
-            85% { offset-distance: 100%; opacity: 1; } /* Reached end, start fade out */
-            95% { opacity: 0; }                        /* Fully faded out */
-            100% { offset-distance: 100%; opacity: 0; } /* Stay at end but invisible for loop reset */
-        }
-
-
-        /* Responsive adjustments for the animation */
-        @media (max-width: 767px) {
-            .pen-animation-container {
-                width: 220px; /* Smaller on mobile */
-                top: 15%; /* Adjust position */
-                opacity: 0.6;
-            }
-            body.light-mode .pen-animation-container { opacity: 0.4; }
-             #pen-tool-icon { transform: scale(0.9); }
-             #drawing-path { stroke-width: 3; }
-        }
-        @media (max-width: 480px) {
-            .pen-animation-container {
-                 width: 180px;
-                 top: 12%;
-             }
-             #pen-tool-icon { transform: scale(0.8); }
-        }
-        /* --- END Pen Tool Animation Styles --- */
-
     </style>
 
 </head>
@@ -655,34 +615,39 @@
 <main>
     <!-- Hero Section -->
     <section class="hero" id="hero">
+         <!-- Container for new animated particles -->
+         <div class="hero-particles-container" id="hero-particles-container"></div>
 
-         <!-- === START: PEN TOOL ANIMATION (Moved Before Hero Content) === -->
-         <div class="pen-animation-container">
-             <!-- Define SVG viewbox based on the Pen Tool icon size/coords -->
-             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" preserveAspectRatio="xMidYMid meet">
-                 <!-- The path the Pen Tool will follow and draw -->
-                 <!-- Path Data: M=Move to, Q=Quadratic Bezier, T=Smooth Quadratic Bezier shorthand -->
-                 <path id="drawing-path"
-                       d="M 20 100 Q 100 10 200 80 T 380 110"
-                       stroke="var(--primary-color)"
-                       stroke-width="4"
-                       stroke-linecap="round"
-                       stroke-linejoin="round"
-                       fill="none"/>
-
-                <!-- The Pen Tool Icon (Example - REPLACE with your actual Pen Tool SVG) -->
-                <!-- Make sure it has classes for styling parts: .pen-body, .pen-nib, .pen-detail -->
-                <g id="pen-tool-icon">
-                     <!-- Example Pen Tool Structure (Adjust coordinates/shapes as needed) -->
-                     <path class="pen-body" d="M10 0 L20 0 L15 25 L5 25 Z" /> <!-- Main body -->
-                     <path class="pen-nib" d="M10 25 Q12.5 28 15 25 L10 25 Z" /> <!-- Nib tip -->
-                     <rect class="pen-detail" x="8" y="5" width="4" height="10" rx="1" /> <!-- Detail line -->
-                 </g>
-             </svg>
+         <!-- Morphing Icon Animation -->
+         <div class="icon-morph-animation-container" id="icon-morph-animation-container">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <g class="morph-icon-group" id="icon-pen-tool">
+                    <path d="M51.92 12.08a3.83 3.83 0 00-5.42 0L12.93 45.65a1 1 0 00-.29.71L12 52a1 1 0 001 1l5.64-.64a1 1 0 00.71-.29L52.08 17.5a3.83 3.83 0 000-5.42zM21.5 42.5l-3-3L42.07 15.93l3 3zM14 48.59l.59-2.36 1.77 1.77L14 48.59z"></path>
+                    <path d="M50.5 6.5a7.73 7.73 0 00-10.93 0L16.41 29.67l11.66 11.66L51.23 18.17a7.73 7.73 0 000-10.93l-.73-.74zM25.22 38.38L18.5 31.66l18.6-18.6 6.72 6.72z"></path>
+                </g>
+                <g class="morph-icon-group" id="icon-color-palette">
+                    <path d="M48.78,18.29A18,18,0,0,0,23.22,15a18.23,18.23,0,0,0-6,1.27A17.94,17.94,0,0,0,15,48.78a18,18,0,0,0,25.57,2.55,1.22,1.22,0,0,0,.14-.14A18,18,0,0,0,48.78,18.29ZM24,27a3,3,0,1,1,3-3A3,3,0,0,1,24,27Zm9,15a3,3,0,1,1,3-3A3,3,0,0,1,33,42Zm9-9a3,3,0,1,1,3-3A3,3,0,0,1,42,33Z"></path>
+                </g>
+                <g class="morph-icon-group" id="icon-typography">
+                    <polygon points="37.29 12 26.71 12 10 52 17.14 52 21.29 40 42.71 40 46.86 52 54 52 37.29 12"></polygon>
+                    <polygon points="24.23 34.29 32 18.43 39.77 34.29 24.23 34.29"></polygon>
+                </g>
+                <g class="morph-icon-group" id="icon-ruler">
+                    <path d="M54,20H38a2,2,0,0,0-2,2V52a2,2,0,0,0,2,2H54a2,2,0,0,0,2-2V22A2,2,0,0,0,54,20ZM52,50H40V24H52Z"></path>
+                    <rect x="10" y="28" width="20" height="8" rx="2"></rect>
+                    <path d="M30,30h-2v-1a1,1,0,0,0-2,0v1h-2v-1a1,1,0,0,0-2,0v1h-2v-1a1,1,0,0,0-2,0v1h-2v-1a1,1,0,0,0-2,0V34h18V29a1,1,0,0,0-2,0Z" opacity="0.5"></path>
+                </g>
+                <g class="morph-icon-group" id="icon-cube">
+                     <polygon points="32 6 6 20 6 44 32 58 58 44 58 20 32 6"></polygon>
+                     <line x1="6" y1="20" x2="32" y2="34"></line>
+                     <line x1="32" y1="34" x2="58" y2="20"></line>
+                     <line x1="32" y1="34" x2="32" y2="58"></line>
+                </g>
+            </svg>
          </div>
-         <!-- === END: PEN TOOL ANIMATION === -->
 
-         <div class="hero-content"> <!-- Main hero text, buttons etc - Now below the animation container -->
+         <!-- Hero Text Content -->
+         <div class="hero-content">
              <h1>Creative Vision, <span>Pixel Perfect</span> Design</h1>
              <p class="muted">I'm Dennis Ad, a passionate Graphic Designer crafting compelling visuals that communicate, engage, and inspire. Based in Port-Harcourt.</p>
              <div class="btn-container">
@@ -690,7 +655,6 @@
                 <a href="#contact" class="btn btn-secondary" style="margin-left: 1rem;">Let's Talk</a>
              </div>
          </div>
-
      </section>
 
     <!-- Portfolio Section -->
@@ -698,32 +662,26 @@
         <div class="container">
             <h2 class="section-title fade-in">Selected Projects</h2>
             <div class="portfolio-grid">
-                <!-- Project Item 1: Branding -->
                 <div class="portfolio-item portfolio-item-clickable fade-in" style="--item-index: 0;" data-modal-target="#modal-project-1">
                      <img src="https://i.imgur.com/39PQXmi.jpeg" alt="Branding Identity Logos">
                      <div class="overlay"><h3>Branding Identity</h3><p>Branding / Logo Design</p></div>
                 </div>
-                <!-- Project Item 2: UI Design -->
                 <div class="portfolio-item portfolio-item-clickable fade-in" style="--item-index: 1;" data-modal-target="#modal-project-2">
                     <img src="https://i.imgur.com/VOrTfhF.jpeg" alt="UI Design Examples">
                      <div class="overlay"><h3>UI Design</h3><p>Web Design / UI Concept</p></div>
                 </div>
-                <!-- Project Item 3: Illustration -->
                 <div class="portfolio-item portfolio-item-clickable fade-in" style="--item-index: 2;" data-modal-target="#modal-project-3">
                     <img src="https://i.imgur.com/jS2rzf2.jpeg" alt="Illustration Examples">
                      <div class="overlay"><h3>Illustration</h3><p>Illustration / Print</p></div>
                 </div>
-                <!-- Project Item 4: Product Packaging -->
                 <div class="portfolio-item portfolio-item-clickable fade-in" style="--item-index: 3;" data-modal-target="#modal-project-4">
                     <img src="https://i.imgur.com/wXP0TmX.jpeg" alt="Product Packaging Examples">
                      <div class="overlay"><h3>Product Packaging</h3><p>Packaging Design</p></div>
                 </div>
-                <!-- Project Item 5: Social Media Ad -->
                  <div class="portfolio-item portfolio-item-clickable fade-in" style="--item-index: 4;" data-modal-target="#modal-project-5">
                     <img src="https://i.imgur.com/6OxLGN8.jpeg" alt="Social Media Ad Examples">
                      <div class="overlay"><h3>Social Media Ad</h3><p>Social Media Campaign</p></div>
                 </div>
-                <!-- Project Item 6: Flyer Design -->
                  <div class="portfolio-item portfolio-item-clickable fade-in" style="--item-index: 5;" data-modal-target="#modal-project-6">
                     <img src="https://i.imgur.com/mlVIggJ.jpeg" alt="Flyer Design Examples">
                      <div class="overlay"><h3>Flyer Design</h3><p>Print / Promotional Design</p></div>
@@ -794,158 +752,13 @@
     </div>
 </footer>
 
-<!-- MODAL STRUCTURES -->
-
-<!-- Modal 1: Branding Identity -->
-<div class="modal" id="modal-project-1">
-    <div class="modal-overlay"></div>
-    <div class="modal-content">
-        <button class="modal-close" aria-label="Close modal">&times;</button>
-        <h3>Branding Identity & Logo Design</h3>
-        <img src="https://i.imgur.com/39PQXmi.jpeg" alt="Logo Design Collection" class="modal-main-image">
-
-        <h4>Project Overview</h4>
-        <p>This collection represents a vibrant cross-section of logo and brand identity projects developed for a diverse range of clients during my freelance practice. From the energetic buzz of a local coffee shop (The Daily Grind) and the sharp precision of a barber (Boms Clippers) to the sophisticated trust required in finance (Apex Advisory) and the welcoming warmth of pet services (Paws & Bubbles), each project presented a unique narrative waiting to be told visually.</p>
-        <p>The challenge was consistent across the board: to distill the essence of each business – its mission, values, target audience, and unique selling proposition – into a single, memorable, and effective visual mark. Whether crafting an identity for a tech innovator (Innovate Solutions), a nature-focused skincare brand (Verdant Earth), or a global logistics company (Horizon Shipping), the overarching goal remained the same: to create a logo that not only looks exceptional but also functions strategically as the cornerstone of the client's brand identity, fostering recognition, trust, and connection. This gallery showcases the breadth of styles and industries I've had the pleasure of working within.</p>
-
-        <h4>My Role & Solution</h4>
-        <p>As the sole freelance designer on these projects, my role was comprehensive, acting as a strategic partner and creative lead from initial concept to final delivery. I worked directly with each client, fostering a collaborative relationship built on clear communication and a deep dive into their specific needs and aspirations.</p>
-        <p>My process typically involved:</p>
-        <ol>
-            <li><strong>Immersive Discovery:</strong> Conducting thorough consultations to understand the client's business, vision, competition, and target market. For instance, understanding the blend of tradition and modern edge for Iron & Grit required a different approach than capturing the playful learning environment for Brainy Bee.</li>
-            <li><strong>Strategic Concepting:</strong> Translating insights from the discovery phase into distinct visual concepts. This involved sketching, exploring various typographic treatments, colour palettes, and iconographic styles, ensuring each concept offered a unique strategic direction.</li>
-            <li><strong>Iterative Design & Refinement:</strong> Presenting the strongest concepts to the client and engaging in a feedback loop. This collaborative refinement was key – whether it was fine-tuning the sleekness of the Soundwave Streaming icon or perfecting the homely feel of The Rolling Pin Bakery logo, client input was integral to shaping the final design.</li>
-            <li><strong>Versatile Execution:</strong> Developing the chosen logo into a robust and adaptable visual asset. The solution wasn't just a static image, but a flexible identity element provided in various formats suitable for everything from web favicons and app icons (like those displayed) to large-scale print and merchandise.</li>
-        </ol>
-        <p>The <strong>solution</strong> delivered for each client was more than just a logo; it was a bespoke visual identity foundation designed to resonate authentically with their audience and empower their brand's growth. My adaptability as a freelancer allowed me to pivot between diverse aesthetic requirements and client communication styles, ultimately delivering unique, impactful visual identities tailored to each specific challenge. This portfolio segment demonstrates that focused approach and the successful visual outcomes achieved through strategic collaboration.</p>
-    </div>
-</div>
-
-<!-- Modal 2: UI Design -->
-<div class="modal" id="modal-project-2">
-    <div class="modal-overlay"></div>
-    <div class="modal-content">
-        <button class="modal-close" aria-label="Close modal">&times;</button>
-        <h3>UI Design - Web & App Interfaces</h3>
-        <img src="https://i.imgur.com/VOrTfhF.jpeg" alt="Examples of UI Design Projects" class="modal-main-image">
-
-        <h4>Project Overview</h4>
-        <p>This collection showcases my freelance work in User Interface (UI) design, demonstrating a capacity to create intuitive, engaging, and aesthetically pleasing digital experiences across various platforms. The projects range from crafting sleek marketing websites designed to convert visitors (like the luxury property example) and user-friendly e-commerce platforms (like 'Goody') to developing complex, data-rich dashboards for specialized industries like cybersecurity ('Sikura') and SaaS ('Comerza Technologies').</p>
-        <p>Each interface aimed to solve specific user needs and business objectives – whether simplifying complex information, driving sales, enhancing user engagement, or building brand credibility online. The goal was always to create interfaces that are not just visually appealing but are also functional, accessible, and aligned with the client's strategic goals. As a freelancer, understanding these diverse needs quickly and translating them into effective digital canvases was paramount.</p>
-
-        <h4>My Role & Solution</h4>
-        <p>As the freelance UI designer, I collaborated directly with clients, often acting as their primary design resource to understand their vision, target audience, and functional requirements. My role encompassed the entire UI design lifecycle, from initial research and sketching user flows – sometimes helping clients clarify their own ideas – to wireframing, prototyping, and delivering pixel-perfect high-fidelity mockups ready for development.</p>
-        <p>My process involved:</p>
-        <ul>
-            <li><strong>Understanding Needs:</strong> Deep dives into user personas and business goals. For instance, the 'Sikura' dashboard needed absolute clarity and trust, while the 'Goody' site required a playful yet functional shopping experience. I ensured the design was user-centered and strategically sound.</li>
-            <li><strong>Structuring Information:</strong> Creating clear information architecture and intuitive navigation pathways, making even complex interfaces feel effortless to use.</li>
-            <li><strong>Visual Design:</strong> Translating wireframes into compelling visual designs using tools like Figma. This involved careful selection of typography, color palettes that evoke the right brand feeling, clean layouts, and thoughtful interaction design. Brand consistency was meticulously maintained throughout each interface.</li>
-            <li><strong>Iteration & Feedback:</strong> Engaging in efficient iterative design cycles based on client feedback and usability principles. As a freelancer, clear communication and quick adaptation were key to refining the user experience effectively.</li>
-        </ul>
-        <p>The <strong>solution</strong> in each case was a bespoke UI tailored to the specific context – whether it demanded the robust clarity of a security dashboard or the inviting, seamless flow of an e-commerce platform. By focusing on clean design, usability, and the client's strategic objectives, I delivered interfaces designed to perform effectively, provide a seamless user journey, and ultimately contribute to the client's success.</p>
-    </div>
-</div>
-
-<!-- Modal 3: Illustration -->
-<div class="modal" id="modal-project-3">
-    <div class="modal-overlay"></div>
-    <div class="modal-content">
-        <button class="modal-close" aria-label="Close modal">&times;</button>
-        <h3>Illustration - Visual Storytelling</h3>
-        <img src="https://i.imgur.com/jS2rzf2.jpeg" alt="Collection of Diverse Illustrations" class="modal-main-image">
-
-        <h4>Project Overview</h4>
-        <p>This gallery represents my freelance illustration work, showcasing a versatile range of styles and applications, demonstrating my ability to bring ideas to life visually. Illustrations possess a unique power to communicate complex ideas simply (like the isometric cityscapes), evoke specific emotions (the cozy reading nook or the autumnal scene), and add a distinct, memorable personality to a brand or project (the stylized characters or the astronaut). These examples span various styles – from clean vector graphics and detailed isometric scenes to charming character designs and atmospheric digital paintings.</p>
-        <p>These illustrations were commissioned by various clients for diverse needs: engaging website hero graphics, unique editorial content, eye-catching social media visuals, character development for branding concepts, and adding that special visual spark to presentations or print materials. Each piece aimed to capture a specific mood or message, carefully tailored to resonate with the intended audience and fulfill the client's vision.</p>
-
-        <h4>My Role & Solution</h4>
-        <p>Working as a freelance illustrator, my role often begins with a spark of an idea from the client. I take that concept, dive deep into understanding the narrative or communication goal, and then translate these abstract ideas into tangible visual concepts. Ensuring the style and tone are perfectly aligned with the project's objectives is always my top priority.</p>
-        <p>My typical workflow included:</p>
-        <ul>
-            <li><strong>Conceptualization:</strong> Listening carefully to the client's brief, asking clarifying questions, and then brainstorming and sketching initial ideas to explore different visual directions.</li>
-            <li><strong>Style Development:</strong> Defining or adapting an illustration style suitable for the project. Whether it needs the approachability of cartoon characters, the technical detail of isometric views, or the atmospheric depth of digital painting, I adapt my skills to fit the need.</li>
-            <li><strong>Digital Execution:</strong> Bringing the chosen concept to life using professional tools like Adobe Illustrator for crisp vectors or Adobe Photoshop with a graphics tablet for painterly textures and more organic styles.</li>
-            <li><strong>Refinement & Delivery:</strong> Collaborating closely with the client through feedback rounds, making adjustments to ensure the final illustration perfectly captures their vision. Finally, delivering optimized files tailored for their specific intended use – be it web, print, or other media.</li>
-        </ul>
-        <p>The <strong>solution</strong> provided was always more than just a picture; it was a piece of bespoke visual communication crafted to enhance the client's message, engage their audience, and realize their vision with creativity, precision, and a collaborative spirit. My adaptability as a freelancer allows me to fluidly switch between styles and techniques to meet unique project demands.</p>
-    </div>
-</div>
-
-<!-- Modal 4: Product Packaging -->
-<div class="modal" id="modal-project-4">
-    <div class="modal-overlay"></div>
-    <div class="modal-content">
-        <button class="modal-close" aria-label="Close modal">&times;</button>
-        <h3>Product Packaging Design</h3>
-        <img src="https://i.imgur.com/wXP0TmX.jpeg" alt="Examples of Product Packaging Design" class="modal-main-image">
-
-        <h4>Project Overview</h4>
-        <p>This selection highlights my freelance experience in product packaging design, a critical discipline where branding, marketing strategy, and the physical product experience converge. In a competitive retail environment, effective packaging is the first handshake with the consumer. It must instantly capture attention, communicate the brand's essence and product benefits, and create a desirable, tangible experience. The examples shown demonstrate my versatility across different markets: capturing the vibrant, fizzy fun of a beverage ('Poppix'), conveying the natural, glowing elegance of cosmetics ('Lume'), and evoking the sophisticated, mysterious allure of a luxury fragrance ('Noir 47').</p>
-        <p>Each project presented a unique puzzle: how to best represent the specific product, resonate with its target audience, and achieve standout positioning in its market? The goal was always to create packaging that wasn't just visually compelling but also functioned strategically as a silent salesperson and a physical embodiment of the brand's promise and quality.</p>
-
-        <h4>My Role & Solution</h4>
-        <p>As the freelance packaging designer, I partnered directly with clients, often guiding them through the process of translating their brand identity and product attributes into impactful, real-world packaging solutions. My role blended strategic thinking about the consumer journey, shelf impact, and unboxing experience with the creative execution of visual elements and structural considerations.</p>
-        <p>Key aspects of my process included:</p>
-        <ul>
-            <li><strong>Brand & Market Research:</strong> Diving into the brand's core values, analyzing the competitive landscape (what are others doing?), and understanding the target consumer profile (what appeals to them?) to inform the design direction.</li>
-            <li><strong>Concept Development:</strong> Exploring diverse structural forms and graphic design concepts. This involved considering materials (glass, metal, cardboard), finishes (matte, gloss, textures), striking typography, evocative color palettes, and relevant imagery or patterns.</li>
-            <li><strong>Visual Execution:</strong> Meticulously developing the chosen concept into detailed 3D mockups and flat designs, ensuring all mandatory information (ingredients, volume, usage instructions, barcodes) was integrated seamlessly, legibly, and aesthetically.</li>
-            <li><strong>Print-Ready Artwork:</strong> Creating precise, technically accurate, print-ready files. This often involved managing complex dielines, ensuring correct color separations (CMYK, Pantone), and sometimes liaising with printers to guarantee the final product matches the vision. Proficiency in Adobe Illustrator and Photoshop was crucial here.</li>
-        </ul>
-        <p>The <strong>solution</strong> delivered was packaging engineered to perform – designed to attract the right customer amidst shelf clutter, instantly convey quality and key selling points, and ultimately contribute significantly to the product's market success and brand perception. My focus was on creating designs that were both aesthetically stunning and commercially effective.</p>
-    </div>
-</div>
-
-<!-- Modal 5: Social Media Ad -->
-<div class="modal" id="modal-project-5">
-    <div class="modal-overlay"></div>
-    <div class="modal-content">
-        <button class="modal-close" aria-label="Close modal">&times;</button>
-        <h3>Social Media Campaign Graphics</h3>
-        <img src="https://i.imgur.com/6OxLGN8.jpeg" alt="Examples of Social Media Ad Designs" class="modal-main-image">
-
-        <h4>Project Overview</h4>
-        <p>This gallery showcases a dynamic range of graphics designed specifically for the fast-paced world of social media platforms, created during various freelance engagements. In today's digital landscape, where attention is fleeting, social media visuals must be thumb-stopping – immediately arresting, communicating information clearly and concisely, and resonating perfectly with the brand's voice and the specific campaign's objectives. The examples here cover diverse purposes, from generating buzz for events (like 'TGIF', 'Operation Jehoshaphat', or 'Youth Super Sunday'), promoting services or workshops ('Learn Graphic Design', 'Boms Clippers Hair Styling'), to announcing special programs ('Ancient of Days', 'Special Faith Clinic') and driving engagement for community initiatives.</p>
-        <p>The core challenge across these projects was consistently translating a brief into visually compelling content optimized for platforms like Instagram and Facebook. Each design needed to cut through the noise, drive engagement (likes, shares, comments), and encourage specific actions, whether it was visiting a link, registering for an event, or simply building brand awareness within the community.</p>
-
-        <h4>My Role & Solution</h4>
-        <p>As the freelance designer, I often worked directly with clients, community leaders, or marketing coordinators, interpreting their campaign goals and translating them into effective social media creative. This frequently required agility, a quick turnaround, and a sharp understanding of current platform trends and best practices.</p>
-        <p>My contribution typically involved:</p>
-        <ul>
-            <li><strong>Understanding Objectives & Audience:</strong> Quickly clarifying the specific goal of each post or campaign (e.g., drive registrations, increase awareness, announce details) and tailoring the visual approach to resonate with the target audience (youth, congregation members, potential students, etc.).</li>
-            <li><strong>Content Design:</strong> Crafting visually engaging layouts that combine strong typography, relevant and often vibrant imagery or illustrations, and consistent brand colors/logos. This encompassed designing static posts, multi-image carousels, and sometimes story graphics, always focusing on immediate impact and readability.</li>
-            <li><strong>Platform Optimization:</strong> Ensuring all designs adhered to the optimal dimensions, file formats, and specifications for various social media platforms (Instagram feed, Stories, Facebook posts, event banners), maximizing visibility and impact.</li>
-            <li><strong>Brand Consistency:</strong> Skillfully maintaining a consistent visual identity across diverse campaign materials, reinforcing brand recognition even when creating varied content types. My toolkit primarily includes Adobe Photoshop and Illustrator, occasionally leveraging Canva for rapid deployment or client collaboration.</li>
-        </ul>
-        <p>The <strong>solution</strong> provided was a suite of eye-catching, platform-appropriate social media graphics meticulously designed to capture attention in crowded feeds and communicate key messages effectively. My focus was always on creating visuals that not only look professional and engaging but also directly contribute to the client's specific communication and marketing goals online.</p>
-    </div>
-</div>
-
-<!-- Modal 6: Flyer Design -->
-<div class="modal" id="modal-project-6">
-    <div class="modal-overlay"></div>
-    <div class="modal-content">
-        <button class="modal-close" aria-label="Close modal">&times;</button>
-        <h3>Flyer & Promotional Design</h3>
-        <img src="https://i.imgur.com/mlVIggJ.jpeg" alt="Examples of Flyer and Promotional Designs" class="modal-main-image">
-
-        <h4>Project Overview</h4>
-        <p>This collection demonstrates my freelance expertise in designing impactful flyers, posters, and diverse promotional materials – essential communication tools for bridging the gap between a message and its audience. Whether destined for physical print distribution or digital sharing, these materials face the challenge of grabbing attention instantly amidst visual clutter, presenting information logically and compellingly, and motivating the audience towards a desired action. The examples displayed cover a wide spectrum: advertising special offers ('Valentine Packages'), promoting services ('Beauty Hub'), announcing exciting events ('PK XELEBRITY BARBER QQI', 'Worship Experience #Jesus', 'Live In Concert'), and clearly outlining benefits or information ('Benefit of Registering').</p>
-        <p>The critical balance in each project was achieving high visual appeal without sacrificing clarity. The design needed to be not only eye-catching and reflective of the event's or offer's tone (from romantic to energetic to professional) but also immediately scannable and easy to understand. This required careful strategic consideration of layout hierarchy, typography choices, imagery selection, and color psychology, all tailored to the specific communication goal and target audience.</p>
-
-        <h4>My Role & Solution</h4>
-        <p>As the freelance designer entrusted with these projects, my role was to take raw information, client objectives, and sometimes just a core idea, and transform them into polished, persuasive visual communications. I collaborated closely with clients to ensure the final design accurately reflected their brand identity, captured the intended spirit, and contained all necessary details accurately.</p>
-        <p>My process typically encompassed:</p>
-        <ul>
-            <li><strong>Brief Analysis & Content Strategy:</strong> Diving deep into the core message, identifying the target audience, prioritizing key information (What? When? Where? Why? How much?), and defining the desired call to action (Visit? Call? Register? Attend?).</li>
-            <li><strong>Layout & Composition:</strong> Designing effective and dynamic layouts that guide the viewer's eye naturally towards the most important information. This involved establishing a clear visual hierarchy using size, weight, color, and placement, executed using tools like Adobe InDesign, Photoshop, and Illustrator.</li>
-            <li><strong>Visual Elements:</strong> Thoughtfully selecting or creating appropriate high-quality imagery, illustrations, textures, or graphic elements (including relevant iconography) that enhance the design, support the message, and align with the brand or event's aesthetic.</li>
-            <li><strong>Typography & Color:</strong> Choosing fonts that are not only visually appealing and on-brand but also highly legible for key details. Selecting color palettes that evoke the right mood (e.g., festive, professional, serene, exciting) and ensure good contrast for readability.</li>
-            <li><strong>Finalization & Production Readiness:</strong> Meticulously preparing final files, either as print-ready documents with correct specifications (bleeds, margins, CMYK color mode, high resolution) or as optimized digital versions (RGB, appropriate file size) suitable for online sharing, email, or social media.</li>
-        </ul>
-        <p>The <strong>solution</strong> delivered for each project was a custom-designed promotional piece, carefully crafted to maximize its effectiveness in achieving a specific communication goal – whether that was driving event attendance, generating sales leads, promoting services, or simply informing the public clearly and memorably. My focus was on creating designs that function as powerful marketing tools, blending aesthetic appeal with strategic communication.</p>
-    </div>
-</div>
+<!-- MODAL STRUCTURES (Content unchanged) -->
+<div class="modal" id="modal-project-1"> <div class="modal-overlay"></div> <div class="modal-content"> <button class="modal-close" aria-label="Close modal">&times;</button> <h3>Branding Identity & Logo Design</h3> <img src="https://i.imgur.com/39PQXmi.jpeg" alt="Logo Design Collection" class="modal-main-image"> <h4>Project Overview</h4> <p>This collection represents a vibrant cross-section of logo and brand identity projects developed for a diverse range of clients during my freelance practice. From the energetic buzz of a local coffee shop (The Daily Grind) and the sharp precision of a barber (Boms Clippers) to the sophisticated trust required in finance (Apex Advisory) and the welcoming warmth of pet services (Paws & Bubbles), each project presented a unique narrative waiting to be told visually.</p> <p>The challenge was consistent across the board: to distill the essence of each business – its mission, values, target audience, and unique selling proposition – into a single, memorable, and effective visual mark. Whether crafting an identity for a tech innovator (Innovate Solutions), a nature-focused skincare brand (Verdant Earth), or a global logistics company (Horizon Shipping), the overarching goal remained the same: to create a logo that not only looks exceptional but also functions strategically as the cornerstone of the client's brand identity, fostering recognition, trust, and connection. This gallery showcases the breadth of styles and industries I've had the pleasure of working within.</p> <h4>My Role & Solution</h4> <p>As the sole freelance designer on these projects, my role was comprehensive, acting as a strategic partner and creative lead from initial concept to final delivery. I worked directly with each client, fostering a collaborative relationship built on clear communication and a deep dive into their specific needs and aspirations.</p> <p>My process typically involved:</p> <ol> <li><strong>Immersive Discovery:</strong> Conducting thorough consultations to understand the client's business, vision, competition, and target market. For instance, understanding the blend of tradition and modern edge for Iron & Grit required a different approach than capturing the playful learning environment for Brainy Bee.</li> <li><strong>Strategic Concepting:</strong> Translating insights from the discovery phase into distinct visual concepts. This involved sketching, exploring various typographic treatments, colour palettes, and iconographic styles, ensuring each concept offered a unique strategic direction.</li> <li><strong>Iterative Design & Refinement:</strong> Presenting the strongest concepts to the client and engaging in a feedback loop. This collaborative refinement was key – whether it was fine-tuning the sleekness of the Soundwave Streaming icon or perfecting the homely feel of The Rolling Pin Bakery logo, client input was integral to shaping the final design.</li> <li><strong>Versatile Execution:</strong> Developing the chosen logo into a robust and adaptable visual asset. The solution wasn't just a static image, but a flexible identity element provided in various formats suitable for everything from web favicons and app icons (like those displayed) to large-scale print and merchandise.</li> </ol> <p>The <strong>solution</strong> delivered for each client was more than just a logo; it was a bespoke visual identity foundation designed to resonate authentically with their audience and empower their brand's growth. My adaptability as a freelancer allowed me to pivot between diverse aesthetic requirements and client communication styles, ultimately delivering unique, impactful visual identities tailored to each specific challenge. This portfolio segment demonstrates that focused approach and the successful visual outcomes achieved through strategic collaboration.</p> </div> </div>
+<div class="modal" id="modal-project-2"> <div class="modal-overlay"></div> <div class="modal-content"> <button class="modal-close" aria-label="Close modal">&times;</button> <h3>UI Design - Web & App Interfaces</h3> <img src="https://i.imgur.com/VOrTfhF.jpeg" alt="Examples of UI Design Projects" class="modal-main-image"> <h4>Project Overview</h4> <p>This collection showcases my freelance work in User Interface (UI) design, demonstrating a capacity to create intuitive, engaging, and aesthetically pleasing digital experiences across various platforms. The projects range from crafting sleek marketing websites designed to convert visitors (like the luxury property example) and user-friendly e-commerce platforms (like 'Goody') to developing complex, data-rich dashboards for specialized industries like cybersecurity ('Sikura') and SaaS ('Comerza Technologies').</p> <p>Each interface aimed to solve specific user needs and business objectives – whether simplifying complex information, driving sales, enhancing user engagement, or building brand credibility online. The goal was always to create interfaces that are not just visually appealing but are also functional, accessible, and aligned with the client's strategic goals. As a freelancer, understanding these diverse needs quickly and translating them into effective digital canvases was paramount.</p> <h4>My Role & Solution</h4> <p>As the freelance UI designer, I collaborated directly with clients, often acting as their primary design resource to understand their vision, target audience, and functional requirements. My role encompassed the entire UI design lifecycle, from initial research and sketching user flows – sometimes helping clients clarify their own ideas – to wireframing, prototyping, and delivering pixel-perfect high-fidelity mockups ready for development.</p> <p>My process involved:</p> <ul> <li><strong>Understanding Needs:</strong> Deep dives into user personas and business goals. For instance, the 'Sikura' dashboard needed absolute clarity and trust, while the 'Goody' site required a playful yet functional shopping experience. I ensured the design was user-centered and strategically sound.</li> <li><strong>Structuring Information:</strong> Creating clear information architecture and intuitive navigation pathways, making even complex interfaces feel effortless to use.</li> <li><strong>Visual Design:</strong> Translating wireframes into compelling visual designs using tools like Figma. This involved careful selection of typography, color palettes that evoke the right brand feeling, clean layouts, and thoughtful interaction design. Brand consistency was meticulously maintained throughout each interface.</li> <li><strong>Iteration & Feedback:</strong> Engaging in efficient iterative design cycles based on client feedback and usability principles. As a freelancer, clear communication and quick adaptation were key to refining the user experience effectively.</li> </ul> <p>The <strong>solution</strong> in each case was a bespoke UI tailored to the specific context – whether it demanded the robust clarity of a security dashboard or the inviting, seamless flow of an e-commerce platform. By focusing on clean design, usability, and the client's strategic objectives, I delivered interfaces designed to perform effectively, provide a seamless user journey, and ultimately contribute to the client's success.</p> </div> </div>
+<div class="modal" id="modal-project-3"> <div class="modal-overlay"></div> <div class="modal-content"> <button class="modal-close" aria-label="Close modal">&times;</button> <h3>Illustration - Visual Storytelling</h3> <img src="https://i.imgur.com/jS2rzf2.jpeg" alt="Collection of Diverse Illustrations" class="modal-main-image"> <h4>Project Overview</h4> <p>This gallery represents my freelance illustration work, showcasing a versatile range of styles and applications, demonstrating my ability to bring ideas to life visually. Illustrations possess a unique power to communicate complex ideas simply (like the isometric cityscapes), evoke specific emotions (the cozy reading nook or the autumnal scene), and add a distinct, memorable personality to a brand or project (the stylized characters or the astronaut). These examples span various styles – from clean vector graphics and detailed isometric scenes to charming character designs and atmospheric digital paintings.</p> <p>These illustrations were commissioned by various clients for diverse needs: engaging website hero graphics, unique editorial content, eye-catching social media visuals, character development for branding concepts, and adding that special visual spark to presentations or print materials. Each piece aimed to capture a specific mood or message, carefully tailored to resonate with the intended audience and fulfill the client's vision.</p> <h4>My Role & Solution</h4> <p>Working as a freelance illustrator, my role often begins with a spark of an idea from the client. I take that concept, dive deep into understanding the narrative or communication goal, and then translate these abstract ideas into tangible visual concepts. Ensuring the style and tone are perfectly aligned with the project's objectives is always my top priority.</p> <p>My typical workflow included:</p> <ul> <li><strong>Conceptualization:</strong> Listening carefully to the client's brief, asking clarifying questions, and then brainstorming and sketching initial ideas to explore different visual directions.</li> <li><strong>Style Development:</strong> Defining or adapting an illustration style suitable for the project. Whether it needs the approachability of cartoon characters, the technical detail of isometric views, or the atmospheric depth of digital painting, I adapt my skills to fit the need.</li> <li><strong>Digital Execution:</strong> Bringing the chosen concept to life using professional tools like Adobe Illustrator for crisp vectors or Adobe Photoshop with a graphics tablet for painterly textures and more organic styles.</li> <li><strong>Refinement & Delivery:</strong> Collaborating closely with the client through feedback rounds, making adjustments to ensure the final illustration perfectly captures their vision. Finally, delivering optimized files tailored for their specific intended use – be it web, print, or other media.</li> </ul> <p>The <strong>solution</strong> provided was always more than just a picture; it was a piece of bespoke visual communication crafted to enhance the client's message, engage their audience, and realize their vision with creativity, precision, and a collaborative spirit. My adaptability as a freelancer allows me to fluidly switch between styles and techniques to meet unique project demands.</p> </div> </div>
+<div class="modal" id="modal-project-4"> <div class="modal-overlay"></div> <div class="modal-content"> <button class="modal-close" aria-label="Close modal">&times;</button> <h3>Product Packaging Design</h3> <img src="https://i.imgur.com/wXP0TmX.jpeg" alt="Examples of Product Packaging Design" class="modal-main-image"> <h4>Project Overview</h4> <p>This selection highlights my freelance experience in product packaging design, a critical discipline where branding, marketing strategy, and the physical product experience converge. In a competitive retail environment, effective packaging is the first handshake with the consumer. It must instantly capture attention, communicate the brand's essence and product benefits, and create a desirable, tangible experience. The examples shown demonstrate my versatility across different markets: capturing the vibrant, fizzy fun of a beverage ('Poppix'), conveying the natural, glowing elegance of cosmetics ('Lume'), and evoking the sophisticated, mysterious allure of a luxury fragrance ('Noir 47').</p> <p>Each project presented a unique puzzle: how to best represent the specific product, resonate with its target audience, and achieve standout positioning in its market? The goal was always to create packaging that wasn't just visually compelling but also functioned strategically as a silent salesperson and a physical embodiment of the brand's promise and quality.</p> <h4>My Role & Solution</h4> <p>As the freelance packaging designer, I partnered directly with clients, often guiding them through the process of translating their brand identity and product attributes into impactful, real-world packaging solutions. My role blended strategic thinking about the consumer journey, shelf impact, and unboxing experience with the creative execution of visual elements and structural considerations.</p> <p>Key aspects of my process included:</p> <ul> <li><strong>Brand & Market Research:</strong> Diving into the brand's core values, analyzing the competitive landscape (what are others doing?), and understanding the target consumer profile (what appeals to them?) to inform the design direction.</li> <li><strong>Concept Development:</strong> Exploring diverse structural forms and graphic design concepts. This involved considering materials (glass, metal, cardboard), finishes (matte, gloss, textures), striking typography, evocative color palettes, and relevant imagery or patterns.</li> <li><strong>Visual Execution:</strong> Meticulously developing the chosen concept into detailed 3D mockups and flat designs, ensuring all mandatory information (ingredients, volume, usage instructions, barcodes) was integrated seamlessly, legibly, and aesthetically.</li> <li><strong>Print-Ready Artwork:</strong> Creating precise, technically accurate, print-ready files. This often involved managing complex dielines, ensuring correct color separations (CMYK, Pantone), and sometimes liaising with printers to guarantee the final product matches the vision. Proficiency in Adobe Illustrator and Photoshop was crucial here.</li> </ul> <p>The <strong>solution</strong> delivered was packaging engineered to perform – designed to attract the right customer amidst shelf clutter, instantly convey quality and key selling points, and ultimately contribute significantly to the product's market success and brand perception. My focus was on creating designs that were both aesthetically stunning and commercially effective.</p> </div> </div>
+<div class="modal" id="modal-project-5"> <div class="modal-overlay"></div> <div class="modal-content"> <button class="modal-close" aria-label="Close modal">&times;</button> <h3>Social Media Campaign Graphics</h3> <img src="https://i.imgur.com/6OxLGN8.jpeg" alt="Examples of Social Media Ad Designs" class="modal-main-image"> <h4>Project Overview</h4> <p>This gallery showcases a dynamic range of graphics designed specifically for the fast-paced world of social media platforms, created during various freelance engagements. In today's digital landscape, where attention is fleeting, social media visuals must be thumb-stopping – immediately arresting, communicating information clearly and concisely, and resonating perfectly with the brand's voice and the specific campaign's objectives. The examples here cover diverse purposes, from generating buzz for events (like 'TGIF', 'Operation Jehoshaphat', or 'Youth Super Sunday'), promoting services or workshops ('Learn Graphic Design', 'Boms Clippers Hair Styling'), to announcing special programs ('Ancient of Days', 'Special Faith Clinic') and driving engagement for community initiatives.</p> <p>The core challenge across these projects was consistently translating a brief into visually compelling content optimized for platforms like Instagram and Facebook. Each design needed to cut through the noise, drive engagement (likes, shares, comments), and encourage specific actions, whether it was visiting a link, registering for an event, or simply building brand awareness within the community.</p> <h4>My Role & Solution</h4> <p>As the freelance designer, I often worked directly with clients, community leaders, or marketing coordinators, interpreting their campaign goals and translating them into effective social media creative. This frequently required agility, a quick turnaround, and a sharp understanding of current platform trends and best practices.</p> <p>My contribution typically involved:</p> <ul> <li><strong>Understanding Objectives & Audience:</strong> Quickly clarifying the specific goal of each post or campaign (e.g., drive registrations, increase awareness, announce details) and tailoring the visual approach to resonate with the target audience (youth, congregation members, potential students, etc.).</li> <li><strong>Content Design:</strong> Crafting visually engaging layouts that combine strong typography, relevant and often vibrant imagery or illustrations, and consistent brand colors/logos. This encompassed designing static posts, multi-image carousels, and sometimes story graphics, always focusing on immediate impact and readability.</li> <li><strong>Platform Optimization:</strong> Ensuring all designs adhered to the optimal dimensions, file formats, and specifications for various social media platforms (Instagram feed, Stories, Facebook posts, event banners), maximizing visibility and impact.</li> <li><strong>Brand Consistency:</strong> Skillfully maintaining a consistent visual identity across diverse campaign materials, reinforcing brand recognition even when creating varied content types. My toolkit primarily includes Adobe Photoshop and Illustrator, occasionally leveraging Canva for rapid deployment or client collaboration.</li> </ul> <p>The <strong>solution</strong> provided was a suite of eye-catching, platform-appropriate social media graphics meticulously designed to capture attention in crowded feeds and communicate key messages effectively. My focus was always on creating visuals that not only look professional and engaging but also directly contribute to the client's specific communication and marketing goals online.</p> </div> </div>
+<div class="modal" id="modal-project-6"> <div class="modal-overlay"></div> <div class="modal-content"> <button class="modal-close" aria-label="Close modal">&times;</button> <h3>Flyer & Promotional Design</h3> <img src="https://i.imgur.com/mlVIggJ.jpeg" alt="Examples of Flyer and Promotional Designs" class="modal-main-image"> <h4>Project Overview</h4> <p>This collection demonstrates my freelance expertise in designing impactful flyers, posters, and diverse promotional materials – essential communication tools for bridging the gap between a message and its audience. Whether destined for physical print distribution or digital sharing, these materials face the challenge of grabbing attention instantly amidst visual clutter, presenting information logically and compellingly, and motivating the audience towards a desired action. The examples displayed cover a wide spectrum: advertising special offers ('Valentine Packages'), promoting services ('Beauty Hub'), announcing exciting events ('PK XELEBRITY BARBER QQI', 'Worship Experience #Jesus', 'Live In Concert'), and clearly outlining benefits or information ('Benefit of Registering').</p> <p>The critical balance in each project was achieving high visual appeal without sacrificing clarity. The design needed to be not only eye-catching and reflective of the event's or offer's tone (from romantic to energetic to professional) but also immediately scannable and easy to understand. This required careful strategic consideration of layout hierarchy, typography choices, imagery selection, and color psychology, all tailored to the specific communication goal and target audience.</p> <h4>My Role & Solution</h4> <p>As the freelance designer entrusted with these projects, my role was to take raw information, client objectives, and sometimes just a core idea, and transform them into polished, persuasive visual communications. I collaborated closely with clients to ensure the final design accurately reflected their brand identity, captured the intended spirit, and contained all necessary details accurately.</p> <p>My process typically encompassed:</p> <ul> <li><strong>Brief Analysis & Content Strategy:</strong> Diving deep into the core message, identifying the target audience, prioritizing key information (What? When? Where? Why? How much?), and defining the desired call to action (Visit? Call? Register? Attend?).</li> <li><strong>Layout & Composition:</strong> Designing effective and dynamic layouts that guide the viewer's eye naturally towards the most important information. This involved establishing a clear visual hierarchy using size, weight, color, and placement, executed using tools like Adobe InDesign, Photoshop, and Illustrator.</li> <li><strong>Visual Elements:</strong> Thoughtfully selecting or creating appropriate high-quality imagery, illustrations, textures, or graphic elements (including relevant iconography) that enhance the design, support the message, and align with the brand or event's aesthetic.</li> <li><strong>Typography & Color:</strong> Choosing fonts that are not only visually appealing and on-brand but also highly legible for key details. Selecting color palettes that evoke the right mood (e.g., festive, professional, serene, exciting) and ensure good contrast for readability.</li> <li><strong>Finalization & Production Readiness:</strong> Meticulously preparing final files, either as print-ready documents with correct specifications (bleeds, margins, CMYK color mode, high resolution) or as optimized digital versions (RGB, appropriate file size) suitable for online sharing, email, or social media.</li> </ul> <p>The <strong>solution</strong> delivered for each project was a custom-designed promotional piece, carefully crafted to maximize its effectiveness in achieving a specific communication goal – whether that was driving event attendance, generating sales leads, promoting services, or simply informing the public clearly and memorably. My focus was on creating designs that function as powerful marketing tools, blending aesthetic appeal with strategic communication.</p> </div> </div>
 <!-- End Modal Structures -->
 
 <script>
@@ -963,6 +776,10 @@
     const sections = document.querySelectorAll('section[id]');
     const navLiAnchors = document.querySelectorAll('.nav-links li a');
     const currentYearSpan = document.getElementById('current-year');
+    const heroSection = document.getElementById('hero'); // For parallax & particle container
+    const iconAnimationContainer = document.getElementById('icon-morph-animation-container'); // For morphing icons
+    const heroParticlesContainer = document.getElementById('hero-particles-container'); // For new particles
+
 
     // --- Header Scroll Effect ---
     window.addEventListener('scroll', () => {
@@ -1032,7 +849,7 @@
         navLiAnchors.forEach(a => { a.classList.toggle('active', a.getAttribute('href') === `#${current}`); });
     }
     window.addEventListener('scroll', updateActiveLink);
-    updateActiveLink(); // Initial check on load
+    updateActiveLink();
 
     // --- Fade-in Animation (for elements NOT in hero) ---
     const fadeElems = document.querySelectorAll('.fade-in');
@@ -1070,17 +887,129 @@
     // --- Set Current Year ---
     if (currentYearSpan) { currentYearSpan.textContent = new Date().getFullYear(); }
 
-    /*
-    // --- OPTIONAL: Calculate SVG Path Length (Run once during development) ---
-    document.addEventListener('DOMContentLoaded', () => {
-      const path = document.getElementById('drawing-path');
-      if (path) {
-        console.log('Path length for #drawing-path:', path.getTotalLength());
-        // Update stroke-dasharray/offset in CSS with this value (approx 469.7 for the example)
-      }
-    });
-    */
 
+    // --- START: Hero Animations (Morphing Icons + Parallax + Background Particles) ---
+    document.addEventListener('DOMContentLoaded', () => { // Ensure DOM is ready
+        // Morphing Icons Logic
+        if (iconAnimationContainer) {
+            const iconGroups = Array.from(iconAnimationContainer.querySelectorAll('.morph-icon-group'));
+            let currentIconIndex = 0;
+            const ICON_DURATION = 3000; 
+
+            function showNextMorphIcon() {
+                if (iconGroups.length === 0) return;
+                iconGroups[currentIconIndex].classList.remove('active');
+                currentIconIndex = (currentIconIndex + 1) % iconGroups.length;
+                iconGroups[currentIconIndex].classList.add('active');
+            }
+
+            if (iconGroups.length > 0) {
+                iconGroups[0].classList.add('active');
+                setInterval(showNextMorphIcon, ICON_DURATION);
+            }
+        }
+
+        // Parallax effect for the icon container
+        if (heroSection && iconAnimationContainer) {
+            const PARALLAX_SENSITIVITY = 20; 
+            heroSection.addEventListener('mousemove', (e) => {
+                const { clientX, clientY } = e;
+                const { offsetWidth, offsetHeight } = heroSection;
+                const xPercent = (clientX / offsetWidth) - 0.5;
+                const yPercent = (clientY / offsetHeight) - 0.5;
+                const xOffset = -xPercent * PARALLAX_SENSITIVITY;
+                const yOffset = -yPercent * PARALLAX_SENSITIVITY;
+                iconAnimationContainer.style.transform = `translateX(calc(-50% + ${xOffset}px)) translateY(${yOffset}px)`;
+            });
+            heroSection.addEventListener('mouseleave', () => {
+                iconAnimationContainer.style.transform = 'translateX(-50%)';
+            });
+        }
+
+        // Background Particles Animation Logic
+        if (heroParticlesContainer && heroSection) {
+            const NUM_PARTICLES = 50;
+            let particles = [];
+            let containerWidth = heroSection.offsetWidth;
+            let containerHeight = heroSection.offsetHeight;
+
+            function resetParticle(particle) {
+                particle.size = Math.random() * 3 + 1; // Size: 1px to 4px
+                particle.el.style.width = `${particle.size}px`;
+                particle.el.style.height = `${particle.size}px`;
+                
+                // Start from any edge
+                const edge = Math.floor(Math.random() * 4);
+                if (edge === 0) { // Top
+                    particle.x = Math.random() * containerWidth;
+                    particle.y = -particle.size;
+                } else if (edge === 1) { // Right
+                    particle.x = containerWidth + particle.size;
+                    particle.y = Math.random() * containerHeight;
+                } else if (edge === 2) { // Bottom
+                    particle.x = Math.random() * containerWidth;
+                    particle.y = containerHeight + particle.size;
+                } else { // Left
+                    particle.x = -particle.size;
+                    particle.y = Math.random() * containerHeight;
+                }
+
+                // Target a point generally across the screen
+                const targetXVariance = (Math.random() - 0.5) * containerWidth * 0.5; // Add some variance
+                const targetYVariance = (Math.random() - 0.5) * containerHeight * 0.5;
+
+                particle.targetX = (edge === 1 || edge === 3) ? (containerWidth - particle.x) : (containerWidth / 2 + targetXVariance);
+                particle.targetY = (edge === 0 || edge === 2) ? (containerHeight - particle.y) : (containerHeight / 2 + targetYVariance);
+
+
+                particle.vx = (particle.targetX - particle.x) / (Math.random() * 5000 + 5000); // Speed for x (5-10s)
+                particle.vy = (particle.targetY - particle.y) / (Math.random() * 5000 + 5000); // Speed for y
+                
+                particle.el.style.opacity = Math.random() * 0.4 + 0.1; // Random opacity 0.1 to 0.5
+                particle.el.style.transform = `translate(${particle.x}px, ${particle.y}px)`;
+            }
+
+            function createParticles() {
+                heroParticlesContainer.innerHTML = ''; // Clear existing if any (e.g., on resize)
+                particles = [];
+                for (let i = 0; i < NUM_PARTICLES; i++) {
+                    const el = document.createElement('div');
+                    el.classList.add('particle');
+                    heroParticlesContainer.appendChild(el);
+                    const particle = { el: el };
+                    resetParticle(particle);
+                    particles.push(particle);
+                }
+            }
+
+            function updateParticles() {
+                particles.forEach(p => {
+                    p.x += p.vx;
+                    p.y += p.vy;
+                    p.el.style.transform = `translate(${p.x}px, ${p.y}px)`;
+
+                    // Reset if out of extended bounds
+                    if (p.x < -p.size * 2 || p.x > containerWidth + p.size * 2 ||
+                        p.y < -p.size * 2 || p.y > containerHeight + p.size * 2) {
+                        resetParticle(p);
+                    }
+                });
+                requestAnimationFrame(updateParticles);
+            }
+            
+            function handleResize() {
+                 containerWidth = heroSection.offsetWidth;
+                 containerHeight = heroSection.offsetHeight;
+                 // No need to recreate, just update dimensions for reset logic
+                 // If particles were created based on specific points, then recreate might be needed
+            }
+
+            createParticles();
+            requestAnimationFrame(updateParticles);
+            window.addEventListener('resize', handleResize);
+        }
+    });
+    // --- END: Hero Animations ---
 </script>
 
 </body>
